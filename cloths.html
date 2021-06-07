@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="Css\Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+<style>
+    
+    * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.menu1 li{
+  display:inline-block;
+  padding:5px 15px;
+  margin-left:15px;
+  margin-right:5px;
+  font-size: 16px;
+}
+
+.menu1 a {
+  color:black;
+  
+  text-decoration: none;
+}
+
+.menu1 a:hover{
+  color:blue;
+  
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+   
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.cl_row{
+  display: flex;
+  margin-left:5px;
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+.cl_row h4{
+  margin-top:10px;
+}
+
+.cl_row2{
+  display: flex;
+  margin-left:5px;
+  margin-top: 60px;
+  text-align: center;
+
+}
+
+.cl_row2 h4{
+  margin-top:10px;
+}
+
+.Card_1{
+  display:flex;
+  margin-top:50px;
+}
+
+.card{
+  margin-left:120px;
+}
+
+.card{
+  transition:all 0.2s ease-in;
+  
+} 
+
+.Card_2{
+  display:flex;
+  margin-top:50px;
+}
+
+.card:hover{
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  box-shadow:5px 10px #E5E4E3;
+}
+
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.img{
+  height:80vh;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+   	  <a class="navbar-brand" href="#"><img src="images\logo1.jpg"></a>
+
+  
+
+  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-10" type="search" placeholder="Search"  aria-label="Search">
+      <button type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+
+    </form>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="color:black;" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"style="color:black;" href="#">Login</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" style="color:black;" href="#">Account</a>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color:black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" style="color:black;" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:black;" href="#">Cart</a>
+      </li>
+
+    </ul>
+
+    
+    
+  </div>
+
+</nav>
+
+
+<ul class ="menu1">
+	<li><a href="#">Clothes</a></li>
+	<li><a href="#">Jewellery</a></li>
+	<li><a href="#">personal care</a></li>
+	<li><a href="#">Beauty & grooming</a></li>
+	<li><a href="#">Stationary</a></li>
+	<li><a href="#">Footwear</a></li>
+	<li><a href="#">Accessories</a></li>
+	<li><a href="#">Electronics</a></li>
+	<li><a href="#">Other</a></li>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="Images\h5.jpg" style="width:100%" class="img">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="Images\h2.jpg" style="width:100%" class= "img">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="Images\h7.jpg" style="width:100%" class = "img">
+ 
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="Card_1">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Images\C5.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Images\C6.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Images\C3.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+</div>
+
+
+<div class="Card_2">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Images\C5.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Images\C6.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Images\C3.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+</div>
+
+
+
+<div class = "cl_row mb-5">
+  <div class="col-lg-4 col-mg-4 col=12">
+    <img src="Images\R5.jpg">
+    <div class="bt-row">
+      <h4>Sk Collection</h4>
+      <h6>Women best Collections</h6>
+      <p>FREE Delivery on your first order</p>
+      <p>Price : 660Rs</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-mg-4 col=12">
+    <img src="Images\R3.jpg">
+    <h4>Sk collection</h4>
+    <h6>Women best Collections</h6>
+    <p>FREE Delivery on your first order</p>
+    <p>Price : 760Rs</p>
+  </div>
+
+  <div class="col-lg-4 col-mg-4 col=12">
+    <img src="Images\R6.jpg">
+    <h4>Sk collection</h4>
+    <h6>Women best Collections</h6>
+    <p>FREE Delivery on your first order</p>
+    <p>Price : 560Rs</p>
+  </div>
+
+</div>
+
+<div class = "cl_row2 mb-5">
+  <div class="col-lg-4 col-mg-4 col=12">
+    <img src="Images\R12.jpg">
+    <div class="bt-row">
+      <h4>Sk Collection</h4>
+      <h6>Women best Collections</h6>
+      <p>FREE Delivery on your first order</p>
+      <p>Price : 480Rs</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-mg-4 col=12">
+    <img src="Images\R10.jpg">
+    <h4>Sk collection</h4>
+    <h6>Women best Collections</h6>
+    <p>FREE Delivery on your first order</p>
+    <p>Price : 800Rs</p>
+  </div>
+
+  <div class="col-lg-4 col-mg-4 col=12">
+    <img src="Images\R11.jpg">
+    <h4>Sk collection</h4>
+    <h6>Women best Collections</h6>
+    <p>FREE Delivery on your first order</p>
+    <p>Price : 610Rs</p>
+  </div>
+
+</div>
+
+
+
+</ul>
+</body>
+</html>
